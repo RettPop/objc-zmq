@@ -7,15 +7,15 @@ Pod::Spec.new do |s|
 
     This is an Objective-C version of the reference ZeroMQ object-oriented C API. It follows the guidelines laid out by the official "Guidelines for ZeroMQ bindings".
     DESC
-  s.homepage     = "https://github.com/candeias/objc-zmq"
+  s.homepage     = "https://github.com/rettpop/objc-zmq"
   s.license      = 'MIT'
-  s.author       = { "Rogerio Candeias" => "rogerio.candeias@gmail.com" }
-  s.source       = { :git => "https://github.com/candeias/objc-zmq.git", :tag => s.version.to_s }
+  s.author       = { "Rogerio Candeias" => "rettpop@gmail.com" }
+  s.source       = { :git => "https://github.com/rettpop/objc-zmq.git", :tag => s.version.to_s }
   s.platform     = :ios, '7.0'
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
   s.source_files = 'Classes/cppzmq/*.hpp', 'Classes/objc-zmq/*.{h,m}', 'Classes/zeromq/*.h'
   s.public_header_files = 'Classes/**/*.{h,hpp}'
-  s.vendored_libraries = 'Library/zeromq-4.1.4/static/libzmq.a', 'Library/libsodium-1.0.8/static/libsodium.a'
+  s.vendored_libraries = 'Library/zeromq-4.1.4/static/libzmq.a', 'Library/libsodium-1.0.12/static/libsodium.a'
   s.libraries = 'c++'
 end
